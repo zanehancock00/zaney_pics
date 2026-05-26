@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-bg: #fafaf8;
+  --color-fg: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-line: #e5e5e2;
+
+  /* Font — next/font injects --font-inter at runtime */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Letter-spacing token for all-caps labels */
+  --tracking-caps: 0.15em;
+
+  /* Type scale */
+  --text-xs--font-size: 0.6875rem;
+  --text-sm--font-size: 0.875rem;
+  --text-base--font-size: 1rem;
+  --text-lg--font-size: 1.125rem;
+}
+
+/* ── Global resets ─────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection color: subtle grey, not the default browser blue */
+::selection {
+  background-color: var(--color-line);
+  color: var(--color-fg);
+}
+
+/* ── Utility classes ───────────────────────────────────────────── */
+
+/* All-caps label — used for nav, footer, section labels */
+.caps {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+}
+
+/* ── Lightbox overrides ─────────────────────────────────────────── */
+
+/* Push YARL counter to the bottom-center in small caps */
+.yarl__counter {
+  font-size: 0.6875rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+}
+
+/* Hide prev/next buttons on mobile — rely on swipe */
+@media (max-width: 639px) {
+  .yarl__navigation_prev,
+  .yarl__navigation_next {
+    display: none !important;
+  }
+}
