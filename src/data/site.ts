@@ -1,6 +1,6 @@
 export const site = {
   name: "ZANE HANCOCK",
-  email: "hello@example.com",
+  email: "zanehancock00@gmail.com",
   socials: [
     { label: "IG", href: "https://instagram.com/" },
     // add more: { label: "TW", href: "https://x.com/" }

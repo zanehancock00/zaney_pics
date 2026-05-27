@@ -10,10 +10,10 @@ export default function ContactPage() {
   return (
     <main className="mx-auto max-w-[480px] px-4 pb-24 pt-[72px] sm:px-6">
       <p
-        className="caps mb-8 text-xs"
+        className="mb-8 text-base leading-relaxed"
         style={{ color: "var(--color-muted)" }}
       >
-        For prints, commissions, or just to say hi.
+        Reach out with any inquiries or just to say hi.
       </p>
 
       <a

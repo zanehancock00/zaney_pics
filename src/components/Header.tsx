@@ -7,7 +7,6 @@ import { site } from "@/data/site";
 
 const NAV = [
   { label: "STILLS", href: "/" },
-  { label: "ABOUT", href: "/about" },
   { label: "CONTACT", href: "/contact" },
 ] as const;
 
