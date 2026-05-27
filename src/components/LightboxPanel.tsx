@@ -3,8 +3,7 @@
 import Lightbox from "yet-another-react-lightbox";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/counter.css";
+// CSS is imported in Grid.tsx so it's always bundled, not lazy-loaded
 
 interface Slide {
   src: string;
@@ -36,7 +35,10 @@ export default function LightboxPanel({
       on={{ view: ({ index: i }) => onIndexChange(i) }}
       slides={slides}
       plugins={[Counter, Zoom]}
-      zoom={{ maxZoomPixelRatio: 1 }}
+      zoom={{
+        maxZoomPixelRatio: 1,   // cap zoom at natural pixel size
+        scrollToZoom: true,
+      }}
       styles={{
         root: {
           "--yarl__color_backdrop": "transparent",
@@ -44,10 +46,6 @@ export default function LightboxPanel({
       }}
       carousel={{ finite: false }}
       controller={{ closeOnBackdropClick: true }}
-      render={{
-        slideHeader: () => null,
-        slideFooter: () => null,
-      }}
     />
   );
 }

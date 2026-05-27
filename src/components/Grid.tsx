@@ -3,10 +3,13 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+// YARL CSS loaded here (not in the lazy panel) so styles are ready on first open
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
 import GridImage from "./GridImage";
 import type { Photo } from "@/data/photos";
 
-// Lightbox (and its ~80 KB bundle) loads only when first opened
+// Lazy-load only the JS bundle; CSS above is always included
 const LightboxPanel = dynamic(() => import("./LightboxPanel"), { ssr: false });
 
 interface Props {
@@ -94,16 +97,14 @@ export default function Grid({ photos }: Props) {
         )}
       </AnimatePresence>
 
-      {/* ── Lightbox (lazy) ────────────────────────────────────── */}
-      {open && (
-        <LightboxPanel
-          open={open}
-          index={index}
-          slides={slides}
-          onClose={() => setOpen(false)}
-          onIndexChange={setIndex}
-        />
-      )}
+      {/* ── Lightbox — always mounted so YARL styles apply on first open ── */}
+      <LightboxPanel
+        open={open}
+        index={index}
+        slides={slides}
+        onClose={() => setOpen(false)}
+        onIndexChange={setIndex}
+      />
     </>
   );
 }
