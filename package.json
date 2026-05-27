@@ -12,6 +12,7 @@
     "prebuild": "tsx scripts/build-photos.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^11.18.2",
     "next": "^15.3.2",
     "react": "^19.1.0",
