@@ -47,49 +47,53 @@ import p045 from "../../public/photos/DSC01538.jpg";
 import p046 from "../../public/photos/DSC01550.jpg";
 import p047 from "../../public/photos/DSC01609.jpg";
 import p048 from "../../public/photos/DSC02140.jpg";
-import p049 from "../../public/photos/DSC02329.jpg";
-import p050 from "../../public/photos/DSC02341.jpg";
-import p051 from "../../public/photos/DSC02393.jpg";
-import p052 from "../../public/photos/DSC02404.jpg";
-import p053 from "../../public/photos/DSC02414.jpg";
-import p054 from "../../public/photos/DSC02433.jpg";
-import p055 from "../../public/photos/DSC02548.jpg";
-import p056 from "../../public/photos/DSC02549.jpg";
-import p057 from "../../public/photos/DSC02567.jpg";
-import p058 from "../../public/photos/DSC02614.jpg";
-import p059 from "../../public/photos/DSC02757.jpg";
-import p060 from "../../public/photos/DSC02796.jpg";
-import p061 from "../../public/photos/DSC02807.jpg";
-import p062 from "../../public/photos/DSC02822.jpg";
-import p063 from "../../public/photos/DSC02852.jpg";
-import p064 from "../../public/photos/DSC02856.jpg";
-import p065 from "../../public/photos/DSC02867.jpg";
-import p066 from "../../public/photos/DSC02894.jpg";
-import p067 from "../../public/photos/DSC02936.jpg";
-import p068 from "../../public/photos/DSC02968.jpg";
-import p069 from "../../public/photos/DSC02971.jpg";
-import p070 from "../../public/photos/DSC03020.jpg";
-import p071 from "../../public/photos/DSC03043.jpg";
-import p072 from "../../public/photos/DSC08629.jpg";
-import p073 from "../../public/photos/DSC08631.jpg";
-import p074 from "../../public/photos/DSC08660.jpg";
-import p075 from "../../public/photos/DSC08737.jpg";
-import p076 from "../../public/photos/DSC09646.jpg";
-import p077 from "../../public/photos/DSC09914.jpg";
-import p078 from "../../public/photos/DSC09955.jpg";
-import p079 from "../../public/photos/DSC09957.jpg";
-import p080 from "../../public/photos/IMG_1244.jpg";
-import p081 from "../../public/photos/IMG_3400.jpg";
-import p082 from "../../public/photos/R0000350.jpg";
-import p083 from "../../public/photos/R0000351.jpg";
-import p084 from "../../public/photos/R0000429.jpg";
-import p085 from "../../public/photos/R0000528.jpg";
-import p086 from "../../public/photos/R0000584.jpg";
-import p087 from "../../public/photos/R0001042.jpg";
-import p088 from "../../public/photos/R0001046.jpg";
-import p089 from "../../public/photos/R0001109.jpg";
-import p090 from "../../public/photos/R0001148.jpg";
-import p091 from "../../public/photos/R0001199.jpg";
+import p049 from "../../public/photos/DSC02209.jpg";
+import p050 from "../../public/photos/DSC02233.jpg";
+import p051 from "../../public/photos/DSC02236.jpg";
+import p052 from "../../public/photos/DSC02247-2.jpg";
+import p053 from "../../public/photos/DSC02329.jpg";
+import p054 from "../../public/photos/DSC02341.jpg";
+import p055 from "../../public/photos/DSC02393.jpg";
+import p056 from "../../public/photos/DSC02404.jpg";
+import p057 from "../../public/photos/DSC02414.jpg";
+import p058 from "../../public/photos/DSC02433.jpg";
+import p059 from "../../public/photos/DSC02548.jpg";
+import p060 from "../../public/photos/DSC02549.jpg";
+import p061 from "../../public/photos/DSC02567.jpg";
+import p062 from "../../public/photos/DSC02614.jpg";
+import p063 from "../../public/photos/DSC02757.jpg";
+import p064 from "../../public/photos/DSC02796.jpg";
+import p065 from "../../public/photos/DSC02807.jpg";
+import p066 from "../../public/photos/DSC02822.jpg";
+import p067 from "../../public/photos/DSC02852.jpg";
+import p068 from "../../public/photos/DSC02856.jpg";
+import p069 from "../../public/photos/DSC02867.jpg";
+import p070 from "../../public/photos/DSC02894.jpg";
+import p071 from "../../public/photos/DSC02936.jpg";
+import p072 from "../../public/photos/DSC02968.jpg";
+import p073 from "../../public/photos/DSC02971.jpg";
+import p074 from "../../public/photos/DSC03020.jpg";
+import p075 from "../../public/photos/DSC03043.jpg";
+import p076 from "../../public/photos/DSC08629.jpg";
+import p077 from "../../public/photos/DSC08631.jpg";
+import p078 from "../../public/photos/DSC08660.jpg";
+import p079 from "../../public/photos/DSC08737.jpg";
+import p080 from "../../public/photos/DSC09646.jpg";
+import p081 from "../../public/photos/DSC09914.jpg";
+import p082 from "../../public/photos/DSC09955.jpg";
+import p083 from "../../public/photos/DSC09957.jpg";
+import p084 from "../../public/photos/IMG_1244.jpg";
+import p085 from "../../public/photos/IMG_3400.jpg";
+import p086 from "../../public/photos/R0000350.jpg";
+import p087 from "../../public/photos/R0000351.jpg";
+import p088 from "../../public/photos/R0000429.jpg";
+import p089 from "../../public/photos/R0000528.jpg";
+import p090 from "../../public/photos/R0000584.jpg";
+import p091 from "../../public/photos/R0001042.jpg";
+import p092 from "../../public/photos/R0001046.jpg";
+import p093 from "../../public/photos/R0001109.jpg";
+import p094 from "../../public/photos/R0001148.jpg";
+import p095 from "../../public/photos/R0001199.jpg";
 
 export type Photo = {
   src: StaticImageData;
@@ -190,4 +194,8 @@ export const photos: Photo[] = [
   { src: p089, alt: "" },
   { src: p090, alt: "" },
   { src: p091, alt: "" },
+  { src: p092, alt: "" },
+  { src: p093, alt: "" },
+  { src: p094, alt: "" },
+  { src: p095, alt: "" },
 ];
